@@ -1,24 +1,12 @@
 package com.het.supordemoapp;
 
-import android.content.Intent;
-import android.nfc.NfcAdapter;
-import android.nfc.Tag;
-import android.nfc.tech.IsoDep;
+
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.het.supordemoapp.util.HexUtil;
-import com.het.supordemoapp.util.Logc;
-import com.het.supordemoapp.util.NfcUtils;
-
-import java.util.Arrays;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import static com.het.supordemoapp.util.NfcUtils.isodep;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
          * 加返回键
          */
         ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
+        if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        setTitle("白菜");
+        setTitle("红枣五谷豆浆");
     }
 
     /**
      * 标题栏
+     *
      * @param menu
      * @return
      */
@@ -50,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 加返回键
+     *
      * @param item
      * @return
      */
@@ -62,4 +52,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
